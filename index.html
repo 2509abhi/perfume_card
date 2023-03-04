@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/16fa3b7be5.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: rgb(255, 255, 223);
+      font-family: serif;
+      padding: 8rem 25rem 0;
+    }
+
+    main {
+      display: flex;
+    }
+
+    #Preview2 {
+      display: none;
+    }
+
+    #body {
+      background-color: #fff;
+      padding: 10px 20px;
+      width: 260px;
+    }
+
+    .img-1 {
+      height: 400px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .p{
+      display: flex;
+    }
+    .p2{
+      color: green;
+      font-size: xx-large;
+      font-weight: 900;
+    }
+    .p3{
+      color: grey;
+      text-decoration-line: line-through;
+      margin-left: 20px;
+      padding-top: 25px;
+    }
+    .add-to-cart{
+      background-color: green;
+      border: solid;
+      color: white;
+      padding: 1rem 4rem;
+      text-decoration-line: none;
+    }
+    @media only screen and (max-width: 1340px) {
+  body {
+    padding: 10px;
+  }
+  main{
+    display: block;
+  }
+  #foot{
+    display: none;
+  }
+  #body{
+    margin: 0;
+    padding: 10px;
+    height: 370px;
+    width: 280px;
+  }
+  #Preview{
+    display: none;
+  }
+  #Preview2{
+    display: block;
+  }
+  .img-1 {
+      height: 210px;
+    }
+}
+  </style>
+</head>
+
+<body>
+  <main>
+    <section id="Preview"><img class="img-1" src="images/image-product-desktop.jpg"></section>
+    <section id="Preview2"><img class="img-1" src="images/image-product-mobile.jpg"></section>
+    <section id="body">
+      <h4 style="color: grey;">PERFUME</h4>
+      <h2>Gabrielle Essence Eau De Parfum</h2>
+
+      <p style="color: grey;">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+      <div class="p">
+        <p class="p2">$149.99</p>
+        <p class="p3">$169.99</p>
+      </div>
+
+      <a class="add-to-cart" href="#"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</a>
+    </section>
+  </main>
+  <footer id="foot">
+    <div class="attribution" style="padding: 0;">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Abhishek Bansal</a>.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
